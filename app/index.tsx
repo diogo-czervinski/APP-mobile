@@ -1,15 +1,18 @@
 import { Text, View } from "react-native";
+import { StyleSheet } from "react-native";
+import Title from "./src/components/Title/index";
+import React from "react";
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+    <View style={styles.container}>
+        <Title/>
     </View>
-  );
+    );
 }
+
+const styles = StyleSheet.create({
+  container:{
+    
+  }
+})
